@@ -1,0 +1,1 @@
+# dovecot-xaps-daemon-freebsd

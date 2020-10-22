@@ -1,0 +1,32 @@
+#!/bin/sh
+# $FreeBSD
+#
+
+# PROVIDE: xapsd
+# REQUIRE: LOGIN cleanvar dovecot
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf[.local] to enable xaps:
+# xapsd_enable="YES"
+#
+
+. /etc/rc.subr
+
+name="xapsd"
+rcvar=${name}_enable
+
+load_rc_config $name
+
+#defaults
+: ${xapsd_enable="NO"}
+: ${xapsd_cmd="/usr/local/bin/xapsd"}
+: ${xapsd_pidfile="/var/run/xapsd/xapsd.pid"}
+: ${xapsd_log="/var/log/xapsd.log"}
+
+command=${xapsd_cmd}
+pidfile=${xapsd_pidfile}
+command_args="$command_args >> ${xapsd_log} 2>&1"
+start_cmd="/usr/sbin/daemon -p $pidfile $command $command_args"
+
+run_rc_command "$1"
