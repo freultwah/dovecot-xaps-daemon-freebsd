@@ -54,8 +54,6 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|etc\/xapsd|usr\/local\/etc\/xapsd|' ${WRKSRC}/internal/config/config.go
 	@${REINPLACE_CMD} -e 's|var\/lib|var\/db|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 	@${REINPLACE_CMD} -e 's|var\/run\/dovecot|var\/run\/xapsd|' ${WRKSRC}/configs/xapsd/xapsd.yaml
-#	@${REINPLACE_CMD} -e 's|\/etc\/xapsd\/key.pem|\/usr\/local\/etc\/xapsd\/key.pem|' ${WRKSRC}/configs/xapsd/xapsd.yaml
-#	@${REINPLACE_CMD} -e 's|\/etc\/xapsd\/certificate.pem|\/usr\/local\/etc\/xapsd\/certificate.pem|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 
 post-install:
 	${MKDIR} ${STAGEDIR}/var/db/xapsd
