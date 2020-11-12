@@ -1,5 +1,5 @@
 PORTNAME=	dovecot-xaps-daemon
-DISTVERSION=	g20201019
+DISTVERSION=	g20201112
 PORTREVISION=	0
 
 CATEGORIES=	mail
@@ -14,7 +14,7 @@ USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-GH_TAGNAME=	e473449
+GH_TAGNAME=	bcc6c2b
 
 GH_TUPLE=	\
 	dgrijalva:jwt-go:v3.2.0:dgrijalva_jwt_go/vendor/github.com/dgrijalva/jwt-go \
@@ -54,6 +54,8 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|etc\/xapsd|usr\/local\/etc\/xapsd|' ${WRKSRC}/internal/config/config.go
 	@${REINPLACE_CMD} -e 's|var\/lib|var\/db|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 	@${REINPLACE_CMD} -e 's|var\/run\/dovecot|var\/run\/xapsd|' ${WRKSRC}/configs/xapsd/xapsd.yaml
+#	@${REINPLACE_CMD} -e 's|\/etc\/xapsd\/key.pem|\/usr\/local\/etc\/xapsd\/key.pem|' ${WRKSRC}/configs/xapsd/xapsd.yaml
+#	@${REINPLACE_CMD} -e 's|\/etc\/xapsd\/certificate.pem|\/usr\/local\/etc\/xapsd\/certificate.pem|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 
 post-install:
 	${MKDIR} ${STAGEDIR}/var/db/xapsd
