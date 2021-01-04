@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD
+# $FreeBSD$
 #
 
 # PROVIDE: xapsd
@@ -24,9 +24,8 @@ load_rc_config $name
 : ${xapsd_pidfile="/var/run/xapsd/xapsd.pid"}
 : ${xapsd_log="/var/log/xapsd.log"}
 
-command=${xapsd_cmd}
 pidfile=${xapsd_pidfile}
-command_args="$command_args >> ${xapsd_log} 2>&1"
-start_cmd="/usr/sbin/daemon -p $pidfile $command $command_args"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f -m 3 -o ${xapsd_log} ${xapsd_cmd} ${xapsd_args}"
 
 run_rc_command "$1"
