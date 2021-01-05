@@ -23,6 +23,7 @@ load_rc_config $name
 : ${xapsd_cmd="/usr/local/bin/xapsd"}
 : ${xapsd_pidfile="/var/run/xapsd/xapsd.pid"}
 : ${xapsd_log="/var/log/xapsd.log"}
+: ${xapsd_args=""}
 
 pidfile=${xapsd_pidfile}
 command="/usr/sbin/daemon"
