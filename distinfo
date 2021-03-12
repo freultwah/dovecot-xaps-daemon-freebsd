@@ -1,6 +1,6 @@
-TIMESTAMP = 1615104634
-SHA256 (freswa-dovecot-xaps-daemon-g20210305-3ea43bb_GH0.tar.gz) = 8c52463239955500b69fb47d570ed48f6e174dd1b27b09ab9964d573f06fc810
-SIZE (freswa-dovecot-xaps-daemon-g20210305-3ea43bb_GH0.tar.gz) = 48728
+TIMESTAMP = 1615555692
+SHA256 (freswa-dovecot-xaps-daemon-g20210311-454427b_GH0.tar.gz) = 6135dcbdca062b42d04bb880bf3a929d38994249c0ed831cf3da92613029b7c6
+SIZE (freswa-dovecot-xaps-daemon-g20210311-454427b_GH0.tar.gz) = 48992
 SHA256 (dgrijalva-jwt-go-v3.2.0_GH0.tar.gz) = 197465ef53219f3aeb1a6940b70e16d288fe4e4108d4831b91ea101118440e63
 SIZE (dgrijalva-jwt-go-v3.2.0_GH0.tar.gz) = 36960
 SHA256 (freswa-go-plist-900e8a7d907d_GH0.tar.gz) = 2b4a06b8805bc1436ab8f34d6fd140645a0a01ccaf9f4b3a7dc3e0e35f5a2e88
