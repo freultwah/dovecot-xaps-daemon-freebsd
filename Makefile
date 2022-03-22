@@ -1,5 +1,5 @@
 PORTNAME=	dovecot-xaps-daemon
-DISTVERSION=	g20210921
+DISTVERSION=	g20220318
 PORTREVISION=	0
 
 CATEGORIES=	mail
@@ -14,7 +14,7 @@ USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-GH_TAGNAME=	282e009
+GH_TAGNAME=	92e3c68
 
 GH_TUPLE=	\
 		dgrijalva:jwt-go:v3.2.0:dgrijalva_jwt_go/vendor/github.com/dgrijalva/jwt-go \
