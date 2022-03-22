@@ -19,24 +19,24 @@ GH_TAGNAME=	92e3c68
 GH_TUPLE=	\
 		dgrijalva:jwt-go:v3.2.0:dgrijalva_jwt_go/vendor/github.com/dgrijalva/jwt-go \
 		freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/go-plist \
-		fsnotify:fsnotify:v1.4.7:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
-		go-ini:ini:v1.51.0:go_ini_ini/vendor/gopkg.in/ini.v1 \
-		go-yaml:yaml:v2.2.4:go_yaml_yaml/vendor/gopkg.in/yaml.v2 \
-		golang:net:6772e930b67b:golang_net/vendor/golang.org/x/net \
-		golang:sys:f84b799fce68:golang_sys/vendor/golang.org/x/sys \
-		golang:text:v0.3.3:golang_text/vendor/golang.org/x/text \
+		fsnotify:fsnotify:v1.5.1:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
+		go-ini:ini:v1.66.4:go_ini_ini/vendor/gopkg.in/ini.v1 \
+		go-yaml:yaml:v2.4.0:go_yaml_yaml/vendor/gopkg.in/yaml.v2 \
+		golang:net:27dd8689420f:golang_net/vendor/golang.org/x/net \
+		golang:sys:2edf467146b5:golang_sys/vendor/golang.org/x/sys \
+		golang:text:v0.3.7:golang_text/vendor/golang.org/x/text \
 		hashicorp:hcl:v1.0.0:hashicorp_hcl/vendor/github.com/hashicorp/hcl \
 		julienschmidt:httprouter:v1.3.0:julienschmidt_httprouter/vendor/github.com/julienschmidt/httprouter \
-		magiconair:properties:v1.8.1:magiconair_properties/vendor/github.com/magiconair/properties \
-		mitchellh:mapstructure:v1.1.2:mitchellh_mapstructure/vendor/github.com/mitchellh/mapstructure \
-		pelletier:go-toml:v1.2.0:pelletier_go_toml/vendor/github.com/pelletier/go-toml \
+		magiconair:properties:v1.8.6:magiconair_properties/vendor/github.com/magiconair/properties \
+		mitchellh:mapstructure:v1.4.3:mitchellh_mapstructure/vendor/github.com/mitchellh/mapstructure \
+		pelletier:go-toml:v1.9.4:pelletier_go_toml/vendor/github.com/pelletier/go-toml \
 		sideshow:apns2:v0.20.0:sideshow_apns2/vendor/github.com/sideshow/apns2 \
-		sirupsen:logrus:v1.7.0:sirupsen_logrus/vendor/github.com/sirupsen/logrus \
-		spf13:afero:v1.1.2:spf13_afero/vendor/github.com/spf13/afero \
-		spf13:cast:v1.3.0:spf13_cast/vendor/github.com/spf13/cast \
-		spf13:jwalterweatherman:v1.0.0:spf13_jwalterweatherman/vendor/github.com/spf13/jwalterweatherman \
-		spf13:pflag:v1.0.3:spf13_pflag/vendor/github.com/spf13/pflag \
-		spf13:viper:v1.7.1:spf13_viper/vendor/github.com/spf13/viper \
+		sirupsen:logrus:v1.8.1:sirupsen_logrus/vendor/github.com/sirupsen/logrus \
+		spf13:afero:v1.8.2:spf13_afero/vendor/github.com/spf13/afero \
+		spf13:cast:v1.4.1:spf13_cast/vendor/github.com/spf13/cast \
+		spf13:jwalterweatherman:v1.1.0:spf13_jwalterweatherman/vendor/github.com/spf13/jwalterweatherman \
+		spf13:pflag:v1.0.5:spf13_pflag/vendor/github.com/spf13/pflag \
+		spf13:viper:v1.10.1:spf13_viper/vendor/github.com/spf13/viper \
 		subosito:gotenv:v1.2.0:subosito_gotenv/vendor/github.com/subosito/gotenv
 
 BUILD_DEPENDS+=	dovecot>=2.3.9:mail/dovecot
