@@ -14,7 +14,7 @@ USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-GH_TAGNAME=	4c6c909
+GH_TAGNAME=	97d97d3
 
 GH_TUPLE=	\
 		freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/go-plist \
