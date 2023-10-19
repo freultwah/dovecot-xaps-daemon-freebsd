@@ -1,6 +1,6 @@
 PORTNAME=	dovecot-xaps-daemon
 #DISTVERSION=	g20230429
-DISTVERSION=	g20231012
+DISTVERSION=	g20231019
 PORTREVISION=	0
 
 CATEGORIES=	mail
@@ -16,7 +16,7 @@ USES=		go:1.19,modules
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
 #GH_TAGNAME=	97d97d3
-GH_TAGNAME=	edf2041
+GH_TAGNAME=	836a75b
 
 GH_TUPLE=	\
 		freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/go-plist \
