@@ -1,7 +1,6 @@
 PORTNAME=	dovecot-xaps-daemon
-#DISTVERSION=	g20230429
 DISTVERSION=	g20231019
-PORTREVISION=	0
+PORTREVISION=	1
 
 CATEGORIES=	mail
 
@@ -11,11 +10,11 @@ COMMENT=	Apple push notification plugin for Dovecot
 LICENCE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		go:1.19,modules
+#USES=		go:1.19,modules
+USES=		go,modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-#GH_TAGNAME=	97d97d3
 GH_TAGNAME=	836a75b
 
 GH_TUPLE=	\
