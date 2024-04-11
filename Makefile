@@ -11,7 +11,7 @@ LICENCE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 #USES=		go:1.19,modules
-USES=		go,modules
+USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
