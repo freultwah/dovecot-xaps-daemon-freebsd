@@ -1,5 +1,5 @@
 PORTNAME=	dovecot-xaps-daemon
-DISTVERSION=	g20240326
+DISTVERSION=	g20240501
 PORTREVISION=	0
 
 CATEGORIES=	mail
@@ -15,7 +15,7 @@ USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-GH_TAGNAME=	1e589be
+GH_TAGNAME=	abce2f1
 
 GH_TUPLE=	freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/go-plist \
 		fsnotify:fsnotify:v1.6.0:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
@@ -23,9 +23,9 @@ GH_TUPLE=	freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/
 		go-yaml:yaml:v3.0.1:go_yaml_yaml/vendor/gopkg.in/yaml.v3 \
 		golang-jwt:jwt:v4.5.0:golang_jwt_jwt_v4/vendor/github.com/golang-jwt/jwt/v4 \
 		golang:exp:7918f672742d:golang_exp/vendor/golang.org/x/exp \
-		golang:net:v0.17.0:golang_net/vendor/golang.org/x/net \
-		golang:sys:v0.13.0:golang_sys/vendor/golang.org/x/sys \
-		golang:text:v0.13.0:golang_text/vendor/golang.org/x/text \
+		golang:net:v0.23.0:golang_net/vendor/golang.org/x/net \
+		golang:sys:v0.18.0:golang_sys/vendor/golang.org/x/sys \
+		golang:text:v0.14.0:golang_text/vendor/golang.org/x/text \
 		hashicorp:hcl:v1.0.0:hashicorp_hcl/vendor/github.com/hashicorp/hcl \
 		julienschmidt:httprouter:v1.3.0:julienschmidt_httprouter/vendor/github.com/julienschmidt/httprouter \
 		magiconair:properties:v1.8.7:magiconair_properties/vendor/github.com/magiconair/properties \
