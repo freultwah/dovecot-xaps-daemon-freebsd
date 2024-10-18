@@ -1,5 +1,5 @@
 PORTNAME=	dovecot-xaps-daemon
-DISTVERSION=	g20240501
+DISTVERSION=	g20241017
 PORTREVISION=	0
 
 CATEGORIES=	mail
@@ -10,12 +10,11 @@ COMMENT=	Apple push notification plugin for Dovecot
 LICENCE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-#USES=		go:1.19,modules
 USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-GH_TAGNAME=	abce2f1
+GH_TAGNAME=	9b77f3a
 
 GH_TUPLE=	freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/go-plist \
 		fsnotify:fsnotify:v1.6.0:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
