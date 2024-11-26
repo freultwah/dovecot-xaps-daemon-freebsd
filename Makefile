@@ -1,6 +1,6 @@
 PORTNAME=	dovecot-xaps-daemon
-DISTVERSION=	g20241017
-PORTREVISION=	1
+DISTVERSION=	g20241105
+PORTREVISION=	0
 
 CATEGORIES=	mail
 
@@ -14,7 +14,7 @@ USES=		go:modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
-GH_TAGNAME=	9b77f3a
+GH_TAGNAME=	65ede53
 
 GH_TUPLE=	freswa:go-plist:900e8a7d907d:freswa_go_plist/vendor/github.com/freswa/go-plist \
 		fsnotify:fsnotify:v1.6.0:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
