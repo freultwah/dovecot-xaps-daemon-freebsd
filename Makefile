@@ -56,6 +56,7 @@ USE_RC_SUBR=	xapsd
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|etc\/xapsd|usr\/local\/etc\/xapsd|' ${WRKSRC}/internal/config/config.go
+	@${REINPLACE_CMD} -e '|toolchain go1\.24\.2|d' go.mod
 	@${REINPLACE_CMD} -e 's|var\/lib|var\/db|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 	@${REINPLACE_CMD} -e 's|var\/run\/dovecot|var\/run\/xapsd|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 
