@@ -59,8 +59,8 @@ post-patch:
 	@${REINPLACE_CMD} -e '/toolchain go1\.24\.2/d' ${WRKSRC}/go.mod
 	@${REINPLACE_CMD} -e 's|var\/lib|var\/db|' ${WRKSRC}/configs/xapsd/xapsd.yaml
 	@${REINPLACE_CMD} -e 's|var\/run\/dovecot|var\/run\/xapsd|' ${WRKSRC}/configs/xapsd/xapsd.yaml
-	@cd ${WRKSRC} && go mod tidy
-	@cd ${WRKSRC} && go mod vendor
+	@cd ${WRKSRC} && go123 mod tidy
+	@cd ${WRKSRC} && go123 mod vendor
 
 post-install:
 	${MKDIR} ${STAGEDIR}/var/db/xapsd
