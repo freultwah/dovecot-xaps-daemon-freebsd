@@ -10,7 +10,7 @@ COMMENT=	Apple push notification plugin for Dovecot
 LICENCE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		go:1.25,modules
+USES=		go:1.23,modules
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freswa
